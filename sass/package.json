@@ -1,0 +1,19 @@
+{
+  "name": "pakage.json",
+  "version": "1.0.0",
+  "description": "Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nalvac/P3_ATINHOUNON_Nalvac.git"
+  },
+  "author": "Nalvac ATINHOUNON",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nalvac/P3_ATINHOUNON_Nalvac/issues"
+  },
+  "homepage": "https://github.com/Nalvac/P3_ATINHOUNON_Nalvac#readme"
+}
