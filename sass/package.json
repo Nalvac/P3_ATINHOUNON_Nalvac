@@ -4,7 +4,7 @@
   "description": "Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch ./main.scss:.public/css/style.css"
+    "sass": "sass --watch ./main.scss:./public/css/style.css"
   },
   "repository": {
     "type": "git",

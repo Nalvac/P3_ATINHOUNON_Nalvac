@@ -1,0 +1,7 @@
+$medium : 756px !default;
+$large : 1000px !default;
+
+$medium-up : "only sreen and (min-width :#{$medium})";
+$medium-up : "only sreen and (max-width :#{$medium})";
+$medium-up : "only sreen and (min-width :#{$large})";
+$medium-up : "only sreen and (max-width :#{$large})";
