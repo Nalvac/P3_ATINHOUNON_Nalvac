@@ -1,0 +1,46 @@
+.local{
+    width: 100%;
+    background-color: #dddddd;
+    padding: 1.2rem;
+
+    &__text{
+        font-weight: 700;
+    }
+   
+}
+.exploration{
+    padding: 2rem;
+    
+    background-color: #fafafa;
+    h2,p{
+        text-align: center;
+    }
+    &__sousTitle{
+        font-weight: 300;
+        margin: 1.5rem 0;
+    }
+    &__btn{
+        border: none;
+        padding: 0.75rem 2.0rem;
+        font-weight: 300;
+        border-radius: 100px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        background: linear-gradient($color-secondary, $color-primary);
+    }
+}
+.fonctionnement{
+    padding: 2rem;
+    & > div{        
+         padding: 2rem;
+    }
+}
+.choix{
+    & > div{
+        width: 30%;
+        background-color: #f6f6f6;
+        padding: 1.5rem;
+        border-radius: 20px;
+        @include borderShadow;
+    }
+}
