@@ -195,9 +195,12 @@ button {
 }
 .restaurants__flexBox__heading {
   display: block;
-  padding: 2rem 1rem;
+  padding: 1.2rem 1rem;
   background-color: white;
   border-radius: 0rem 0rem 1rem 1rem;
+}
+.restaurants__flexBox h3 {
+  margin-bottom: 0.5%;
 }
 .restaurants > div {
   width: 48%;
