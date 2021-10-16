@@ -1,3 +1,6 @@
+@import url(../base/base.scss);
+@import url(../utils/_mixins.scss);
+@import url(../components/buttons.scss);
 .local{
     width: 100%;
     background-color: #dddddd;
@@ -20,19 +23,14 @@
         margin: 1.5rem 0;
     }
     &__btn{
-        border: none;
-        padding: 0.75rem 2.0rem;
-        font-weight: 300;
-        border-radius: 100px;
-        font-size: 1.2rem;
-        cursor: pointer;
-        background: linear-gradient($color-secondary, $color-primary);
+        @include btn ;        
+        @include borderShadow;
     }
 }
 .fonctionnement{
     padding: 2rem;
     & > div{        
-         padding: 2rem;
+         padding: 2rem 0rem 2rem 0rem;
     }
 }
 .choix{
@@ -42,5 +40,46 @@
         padding: 1.5rem;
         border-radius: 20px;
         @include borderShadow;
+    }
+}
+.restaurants{
+    
+    padding: 4rem 2rem;    
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    &__flexBox{
+        @extend .flex_column;
+        width: 100%;
+        margin-bottom: 10%;
+        @include borderShadow;        
+        border-radius: 1rem 1rem 1rem 1rem;
+        @each $img, $imgEach in $image-restaurants {
+            &__#{$img}{
+
+                background-image: url($imgEach);
+                background-size: cover;
+                background-position: center;
+                border-radius:  1rem  1rem 0rem 0rem;
+                @include img-ratio
+            }
+        }  
+        &__heading{
+            display: block;
+            padding: 2rem 1rem;
+            background-color: white;
+            border-radius:  0rem  0rem 1rem 1rem;
+        }
+    }
+  
+    & > div{
+        width: 48%;
+    }
+}
+.section-restaurant{
+    background-color: #f6f6f6;
+
+    & > h2{
+        padding: 3rem 2rem 0rem 2rem;
     }
 }

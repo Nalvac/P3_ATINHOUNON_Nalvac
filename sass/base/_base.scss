@@ -6,14 +6,16 @@
     box-sizing: inherit;
 }
 
-html {
-    // 10px div by def of 16px
-   
-}
+
 
 body {
     box-sizing: border-box;
     background: $color-white;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
 }
 .flex_row {
     display: flex;
@@ -30,4 +32,11 @@ body {
 }
 .center{
     text-align: center;
+}
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+.list-menu{
+    display: flex;
 }
