@@ -1,6 +1,4 @@
-@import url(../base/base.scss);
-@import url(../utils/_mixins.scss);
-@import url(../components/buttons.scss);
+
 .local{
     width: 100%;
     background-color: #dddddd;
@@ -9,6 +7,7 @@
     &__text{
         font-weight: 700;
     }
+  
    
 }
 .exploration{
@@ -29,19 +28,37 @@
 }
 .fonctionnement{
     padding: 2rem;
-    & > div{        
+    ol{       
          padding: 2rem 0rem 2rem 0rem;
+         list-style-type: none;
+         position: relative;
+         counter-reset: compteListe;
     }
-}
-.choix{
-    & > div{
+
+    li{
         width: 30%;
         background-color: #f6f6f6;
         padding: 1.5rem;
         border-radius: 20px;
         @include borderShadow;
+        position: relative;
+        &::before{
+            counter-increment: compteListe 1;
+            content: counter(compteListe) " " ;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            margin-left: -35px;
+            width: 1.5rem;
+            height: 1.5rem;
+            align-items: center;
+            border-radius: 100px;
+            background-color: $color-primary;
+        }
+
     }
 }
+
 .restaurants{
     
     padding: 4rem 2rem;    
@@ -85,4 +102,8 @@
     & > h2{
         padding: 3rem 2rem 0rem 2rem;
     }
+}
+.tuto__icon{
+    margin-right: 1rem;
+    color: #7e7e7e;
 }
