@@ -58,7 +58,7 @@ a {
 
 .arrow {
   position: absolute;
-  margin-right: 82%;
+  margin-right: 82% !important;
 }
 
 body {
