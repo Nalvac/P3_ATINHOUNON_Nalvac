@@ -61,7 +61,7 @@
 
 .restaurants{
     
-    padding: 4rem 2rem;    
+    padding: 3rem 2rem;    
     background-color: #f6f6f6;
     display: flex;
     justify-content: space-between;
@@ -78,7 +78,7 @@
                 background-size: cover;
                 background-position: center;
                 border-radius:  1rem  1rem 0rem 0rem;
-                @include img-ratio
+                @include img-ratio;
             }
         }  
         &__heading{
@@ -130,7 +130,7 @@
         li{
            
             width: 100%;
-            margin-bottom: 4%;
+            margin-bottom: 8%;
         }
         ol{
             flex-direction: column;
@@ -142,5 +142,23 @@
         & > div{
             width: 100%;
         }
+        &__flexBox{
+             @each $img, $imgEach in $image-restaurants {
+                &__#{$img}{
+                    @include img-ratio__mobile;
+                }
+            }
+         }
+        }
+    .exploration{
+        &__btn{
+            @include btn__mobile ;        
+            @include borderShadow;
+        }
+    }
+    .tuto__icon{
+        margin-right: 1.8rem;
+        margin-left: 0.5rem;
+        color: #413333;
     }
 }
