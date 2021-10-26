@@ -49,6 +49,18 @@ a {
   display: flex;
 }
 
+.header__flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  margin-right: 82%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -299,8 +311,28 @@ button {
   min-height: 30rem;
   max-height: 32rem;
   border: none;
-  margin-top: -1%;
   z-index: -1;
+}
+
+.menuHeroImg__flexBox__img1 {
+  background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.menuHeroImg__flexBox__img2 {
+  background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.menuHeroImg__flexBox__img3 {
+  background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.menuHeroImg__flexBox__img4 {
+  background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .menu {
@@ -354,6 +386,27 @@ button {
   margin: 2rem 0rem 4rem 0rem;
 }
 
+/* Responsive  Acceuil mobile et Tablette*/
+@media (max-width: 1030px) {
+  .list-menu {
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  .list-menu__heading {
+    padding: 1.1rem 0rem;
+  }
+  .list-menu__flex {
+    width: 100%;
+  }
+
+  .heroImg {
+    min-height: 20rem;
+  }
+
+  .btn__commander {
+    font-size: 0.8rem;
+  }
+}
 .footer {
   width: 100%;
   padding: 1rem 2rem;

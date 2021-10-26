@@ -4,10 +4,19 @@
     min-height: 30rem;
     max-height: 32rem; 
     border: none;
-    margin-top: -1%;
     z-index: -1;
 }
-
+.menuHeroImg{
+     &__flexBox{
+         @each $img, $imgEach in $image-restaurants {
+            &__#{$img}{
+                background-image: url($imgEach);
+                background-size: cover;
+                background-position: center;
+            }
+        }
+     }
+}
 .menu{
     
     margin-top: -4rem;
@@ -66,3 +75,30 @@
     margin: 2rem 0rem 4rem 0rem;
 }
 
+/* Responsive  Acceuil mobile et Tablette*/
+
+@media  (max-width: 1030px) { 
+    
+    .list-menu{
+        flex-direction: column;
+        padding: 0px 30px;
+
+        &__heading{
+            padding: 1.1rem 0rem;
+        }
+        &__flex{
+            width: 100%;
+        }
+    }
+    .heroImg{
+        min-height: 20rem;
+
+    }
+    .btn__commander{
+        font-size: 0.8rem;
+    }
+
+}
+@media (min-width: 0px) and (max-width: 788px) { 
+
+}

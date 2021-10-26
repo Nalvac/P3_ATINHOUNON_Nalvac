@@ -40,3 +40,14 @@ a{
 .list-menu{
     display: flex;
 }
+.header__flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.arrow{
+    position: absolute;
+    margin-right: 82%;
+}
