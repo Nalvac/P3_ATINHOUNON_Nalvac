@@ -232,6 +232,34 @@ button {
   color: #7e7e7e;
 }
 
+/* Responsive  Acceuil mobile et Tablette*/
+@media (min-width: 768px) and (max-width: 1030px) {
+  .fonctionnement li {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .fonctionnement ol {
+    flex-direction: column;
+    margin-bottom: -4%;
+  }
+}
+@media (min-width: 0px) and (max-width: 788px) {
+  .fonctionnement li {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .fonctionnement ol {
+    flex-direction: column;
+    margin-bottom: -4%;
+  }
+
+  .restaurants {
+    flex-direction: column;
+  }
+  .restaurants > div {
+    width: 100%;
+  }
+}
 .heroImg {
   min-height: 30rem;
   max-height: 32rem;
