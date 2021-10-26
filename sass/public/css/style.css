@@ -56,6 +56,11 @@ a {
   position: relative;
 }
 
+.arrow {
+  position: absolute;
+  margin-right: 22rem;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: black;
