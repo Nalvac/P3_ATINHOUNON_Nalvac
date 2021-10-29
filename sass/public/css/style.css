@@ -32,7 +32,6 @@ a {
 
 .flex_column, .restaurants__flexBox {
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -308,6 +307,15 @@ button {
     color: #413333;
   }
 }
+@media screen and (max-width: 358px) {
+  .fonctionnement li {
+    display: flex;
+  }
+  .fonctionnement li > span {
+    font-size: 0.8rem;
+    text-align: unset;
+  }
+}
 .heroImg {
   min-height: 30rem;
   max-height: 32rem;
@@ -339,6 +347,8 @@ button {
 .menu {
   margin-top: -4rem;
   background-color: #f6f6f6;
+  text-overflow: ellipsis;
+  overflow: hidden;
   border-radius: 2rem 2rem 0rem 0rem;
 }
 
@@ -354,16 +364,38 @@ button {
 }
 .list-menu__flex {
   position: relative;
-  padding: 2rem 0rem;
+  padding: 1.1rem 0rem;
   width: 30%;
 }
 .list-menu__flex > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   cursor: pointer;
-  padding: 1.1rem 1rem;
+  overflow: hidden;
   margin-top: 5%;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+.list-menu__flex > div:hover > .icon_confirmation {
+  height: 1.6rem;
+  width: 4rem;
+  padding: 2.5rem 1.8rem;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+}
+.list-menu__flex > div:hover > .icon_confirmation .icon_confirmation__check {
+  height: 1.6rem;
+  width: 1.6rem;
+  transform: rotate(0deg);
+  transition-duration: 0.5s;
+}
+.list-menu__flex_elemts {
+  flex: 1;
+  padding: 1.1rem 1rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .list-menu__flex h3::after {
   display: flex;
@@ -373,6 +405,40 @@ button {
   width: 3rem;
   height: 0.25rem;
   background-color: #99E2D0;
+}
+
+.icon_confirmation {
+  height: 1.6rem;
+  background-color: #99e2d0;
+  padding: 2.5rem 0rem;
+  width: 0rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+.icon_confirmation__check {
+  height: 1.6rem;
+  width: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 100px;
+  color: #99e2d0;
+  background-color: white;
+  font-size: 1.2rem;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+.price {
+  align-self: flex-end;
+  display: block;
+  padding: 1.4rem 1rem;
+}
+
+.fa-check-circle:before {
+  content: "\f058";
+  font-size: 1.8rem;
 }
 
 .btn__commander {

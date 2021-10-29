@@ -21,7 +21,8 @@
     
     margin-top: -4rem;
     background-color: #f6f6f6;
-    
+    text-overflow: ellipsis;
+    overflow: hidden;
     border-radius: 2rem 2rem 0rem 0rem;
 }
 .list-menu{
@@ -29,6 +30,7 @@
     @extend .flex_row;
     flex-wrap: wrap;    
     justify-content: space-around;
+  
     &__heading{
         padding:  1.1rem 1rem;
         font-size: 1.5rem;
@@ -38,17 +40,40 @@
     &__flex{
    
         position: relative;
-        padding: 2rem  0rem;
+        padding: 1.1rem  0rem;
         width: 30%;
-        
-        & > div{
+
+        & > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             cursor: pointer;
-            padding: 1.1rem 1rem;
+            overflow: hidden;
             margin-top: 5%;
             border-radius: 10px;
             background-color: white;            
              @include borderShadow;
+            
+            &:hover >.icon_confirmation {
+                height: 1.6rem;   
+                width: 4rem;
+                padding: 2.5rem 1.8rem;
+                justify-content: center;
+                border-radius: 0 10px 10px 0;
+                .icon_confirmation__check { 
+                    @include icon_animation_fin;
+                }
+            }
 
+        }
+
+        &_elemts{
+
+             flex :1;
+             padding: 1.1rem  1rem;
+             white-space: nowrap;         
+             overflow: hidden;
+    
         }
         h3{
 
@@ -66,6 +91,25 @@
         }
     }
     
+}
+.icon_confirmation{ 
+    height: 1.6rem;   
+    background-color: #99e2d0;
+    padding: 2.5rem 0rem;
+    width: 0rem;
+    display: flex;
+    align-items: center;    
+    transition: all 0.5s;
+    &__check {
+        @include icon_animation_debut;        
+    }
+}
+.price{
+    align-self: flex-end; display: block; padding: 1.4rem 1rem;
+}
+.fa-check-circle:before {
+    content: "\f058";
+    font-size: 1.8rem;
 }
 
 .btn__commander{
@@ -99,6 +143,6 @@
     }
 
 }
-@media (min-width: 0px) and (max-width: 788px) { 
+@media (min-width: 0px) and (max-width: 338px) { 
 
 }

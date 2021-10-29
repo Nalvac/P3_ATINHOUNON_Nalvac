@@ -131,6 +131,7 @@
            
             width: 100%;
             margin-bottom: 8%;
+            
         }
         ol{
             flex-direction: column;
@@ -161,4 +162,17 @@
         margin-left: 0.5rem;
         color: #413333;
     }
+}
+@media screen and (max-width : 358px) {
+    .fonctionnement{
+        li{ 
+            display: flex;           
+            > span{
+                font-size: 0.8rem;
+                text-align:unset;
+                
+            }
+        }
+    }
+    
 }
