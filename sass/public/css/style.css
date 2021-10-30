@@ -343,8 +343,6 @@ button {
 .menu {
   margin-top: -4rem;
   background-color: #f6f6f6;
-  text-overflow: ellipsis;
-  overflow: hidden;
   border-radius: 2rem 2rem 0rem 0rem;
 }
 
