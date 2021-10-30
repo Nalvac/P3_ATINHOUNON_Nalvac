@@ -64,6 +64,12 @@
                     @include icon_animation_fin;
                 }
             }
+            &  h4, p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis
+            
+            }
 
         }
 

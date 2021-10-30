@@ -387,6 +387,11 @@ button {
   transform: rotate(0deg);
   transition-duration: 0.5s;
 }
+.list-menu__flex > div h4, .list-menu__flex > div p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .list-menu__flex_elemts {
   flex: 1;
   padding: 1.1rem 1rem;
