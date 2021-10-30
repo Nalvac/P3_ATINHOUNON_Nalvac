@@ -98,6 +98,7 @@
     padding: 2.5rem 0rem;
     width: 0rem;
     display: flex;
+    overflow: hidden;
     align-items: center;    
     transition: all 0.5s;
     &__check {
