@@ -122,6 +122,10 @@
     @include btn ;        
     @include borderShadow;
     margin: 2rem 0rem 4rem 0rem;
+    &:hover{
+        @include btn_lighten ;             
+        @include borderShadow--hover;              
+    }
 }
 
 /* Responsive  Acceuil mobile et Tablette*/
@@ -142,6 +146,11 @@
 
     .btn__commander{
         font-size: 1rem;
+        &:hover{
+            @include btn_lighten ;
+                
+            @include borderShadow--hover;               
+        }
     }
 
 }

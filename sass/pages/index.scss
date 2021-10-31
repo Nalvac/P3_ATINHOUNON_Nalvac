@@ -24,6 +24,10 @@
     &__btn{
         @include btn ;        
         @include borderShadow;
+        &:hover{
+            @include btn_lighten ;    
+            @include borderShadow--hover;      
+        }
     }
 }
 .fonctionnement{
@@ -154,7 +158,11 @@
     .exploration{
         &__btn{
             @include btn__mobile ;        
-            @include borderShadow;
+            @include borderShadow;  
+            &:hover{
+                @include btn_lighten ; 
+                @include borderShadow--hover;           
+            }    
         }
     }
     .tuto__icon{
