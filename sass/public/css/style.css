@@ -57,6 +57,17 @@ a {
   display: block;
 }
 
+.fa_like {
+  position: absolute;
+  right: 2rem;
+  top: 2.5rem;
+}
+
+.fa-heart:before {
+  content: "\f004";
+  font-size: 1.5rem;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -111,6 +122,14 @@ button {
 }
 .local__text {
   font-weight: 700;
+}
+
+.icon_solid_visible {
+  visibility: hidden;
+}
+
+.icon_regular_visible {
+  visibility: visible;
 }
 
 .exploration {
@@ -231,6 +250,13 @@ button {
   padding: 1.2rem 1rem;
   background-color: white;
   border-radius: 0rem 0rem 1rem 1rem;
+  position: relative;
+}
+.restaurants__flexBox__heading > i:hover .icon_solid_visible {
+  visibility: visible;
+}
+.restaurants__flexBox__heading > i:hover .icon_regular_visible {
+  visibility: hidden;
 }
 .restaurants__flexBox h3 {
   margin-bottom: 0.5%;
