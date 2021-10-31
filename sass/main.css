@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 *,
 *::after,
@@ -64,7 +65,7 @@ a {
 }
 
 .fa-heart:before {
-  content: "\f004";
+  content: "";
   font-size: 1.5rem;
 }
 
@@ -269,7 +270,7 @@ button {
 
 .icon_visibilite:hover .icon_solid {
   display: inline;
-  color: #a956dc;
+  color: #9356dc;
 }
 
 /* Responsive  Acceuil mobile et Tablette*/
@@ -466,7 +467,7 @@ button {
 }
 
 .fa-check-circle:before {
-  content: "\f058";
+  content: "";
   font-size: 1.8rem;
 }
 
@@ -535,6 +536,4 @@ ul > li > a {
 }
 ul > li > a:hover {
   text-decoration: underline;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

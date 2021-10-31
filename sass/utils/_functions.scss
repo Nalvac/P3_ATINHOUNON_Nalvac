@@ -1,0 +1,6 @@
+@function degrader($color-secondary, $color-primary) {
+         $color :linear-gradient($color-secondary, $color-primary);
+         @debug $color;
+        @return $color;
+    
+}
