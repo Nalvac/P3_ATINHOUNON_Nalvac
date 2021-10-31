@@ -269,7 +269,10 @@ button {
 
 .icon_visibilite:hover .icon_solid {
   display: inline;
-  color: #a956dc;
+  background: -webkit-linear-gradient(top, #FF79DA 30%, #9356DC 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* Responsive  Acceuil mobile et Tablette*/
@@ -294,6 +297,7 @@ button {
   }
 
   .restaurants {
+    padding: 3rem 1rem;
     flex-direction: column;
   }
   .restaurants > div {
@@ -310,6 +314,10 @@ button {
   }
   .restaurants__flexBox__img4 {
     height: 8.5rem;
+  }
+
+  .section-restaurant > h2 {
+    padding: 3rem 1rem 0rem 1rem;
   }
 
   .exploration__btn {
@@ -490,7 +498,7 @@ button {
 @media (max-width: 1030px) {
   .list-menu {
     flex-direction: column;
-    padding: 0px 30px;
+    padding: 0rem 1rem;
   }
   .list-menu__heading {
     padding: 1.1rem 0rem;
