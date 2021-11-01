@@ -28,6 +28,8 @@
     @extend .flex_row;
     flex-wrap: wrap;    
     justify-content: space-around;
+    
+    
   
     &__heading{
         padding:  1.1rem 1rem;
@@ -40,7 +42,6 @@
         position: relative;
         padding: 1.1rem  0rem;
         width: 30%;
-
         & > div {
             display: flex;
             align-items: center;
@@ -51,6 +52,8 @@
             border-radius: 10px;
             background-color: white;            
              @include borderShadow;
+             
+        animation: 350ms ease-in-out;
             
             &:hover >.icon_confirmation {
                 height: 1.6rem;   
@@ -127,6 +130,13 @@
         @include borderShadow--hover;              
     }
 }
+.menuLike{
+    display: block;
+    position: absolute;
+    top: 32.5rem;
+    left: 69.8rem;
+}
+
 
 /* Responsive  Acceuil mobile et Tablette*/
 

@@ -408,6 +408,7 @@ button {
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  animation: 350ms ease-in-out;
 }
 .list-menu__flex > div:hover > .icon_confirmation {
   height: 1.6rem;
@@ -492,6 +493,13 @@ button {
 .btn__commander:hover {
   background: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 1px 2px 10px 1px rgba(36, 36, 36, 0.38);
+}
+
+.menuLike {
+  display: block;
+  position: absolute;
+  top: 32.5rem;
+  left: 69.8rem;
 }
 
 /* Responsive  Acceuil mobile et Tablette*/
