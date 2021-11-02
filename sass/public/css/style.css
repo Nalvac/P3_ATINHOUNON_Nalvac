@@ -481,6 +481,7 @@ button {
   align-self: flex-end;
   display: block;
   padding: 1.4rem 1rem;
+  font-weight: 500;
 }
 
 .fa-check-circle:before {
