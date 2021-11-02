@@ -22,13 +22,18 @@
     margin-top: -4rem;
     background-color: #f6f6f6;
     border-radius: 2rem 2rem 0rem 0rem;
+
+    &_titre{
+        align-items: center;
+        padding: 1rem 1rem;
+    }
 }
 .list-menu{
     
     @extend .flex_row;
     flex-wrap: wrap;    
     justify-content: space-around;
-    
+    position: relative;
     
   
     &__heading{
@@ -130,12 +135,7 @@
         @include borderShadow--hover;              
     }
 }
-.menuLike{
-    display: block;
-    position: absolute;
-    top: 32.5rem;
-    left: 69.8rem;
-}
+
 
 
 /* Responsive  Acceuil mobile et Tablette*/
