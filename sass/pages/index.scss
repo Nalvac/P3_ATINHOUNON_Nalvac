@@ -118,7 +118,7 @@
 }
 .icon_visibilite:hover  .icon_solid {
     display: inline;
-    background : -webkit-linear-gradient(top, $color-secondary 30%, $color-primary 70%);
+    background : -webkit-linear-gradient(top, $color-secondary 30%, $color-primary 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

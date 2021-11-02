@@ -269,7 +269,7 @@ button {
 
 .icon_visibilite:hover .icon_solid {
   display: inline;
-  background: -webkit-linear-gradient(top, #FF79DA 30%, #9356DC 70%);
+  background: -webkit-linear-gradient(top, #FF79DA 30%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -384,6 +384,10 @@ button {
 }
 .menu_titre {
   align-items: center;
+  padding: 1rem 1rem;
+}
+
+.margeLike {
   padding: 1rem 1rem;
 }
 
