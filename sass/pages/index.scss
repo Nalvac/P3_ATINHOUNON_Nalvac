@@ -62,7 +62,10 @@
 
     }
 }
-
+.box{
+    @extend .flex_row ;
+    @extend .flex_row__espaceBetween ;
+}
 .restaurants{
     
     padding: 3rem 2rem;    
@@ -160,13 +163,15 @@
             margin-bottom: -4%;
         }        
     }
+    .box{
+        flex-direction: column;
+    }
     .restaurants{
         padding:  3rem 1rem;
         flex-direction: column;
-        & > div{
-            width: 100%;
-        }
+  
         &__flexBox{
+            width: 100%;
              @each $img, $imgEach in $image-restaurants {
                 &__#{$img}{
                     @include img-ratio__mobile;

@@ -17,12 +17,12 @@ a {
   color: #000;
 }
 
-.flex_row, .list-menu {
+.flex_row, .list-menu, .box {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-.flex_row__espaceBetween {
+.flex_row__espaceBetween, .box {
   justify-content: space-between;
 }
 
@@ -193,7 +193,7 @@ button {
 }
 .restaurants__flexBox__img1 {
   position: relative;
-  background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("/restaurants_images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 1rem 1rem 0rem 0rem;
@@ -205,7 +205,7 @@ button {
 }
 .restaurants__flexBox__img2 {
   position: relative;
-  background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("/restaurants_images/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 1rem 1rem 0rem 0rem;
@@ -217,7 +217,7 @@ button {
 }
 .restaurants__flexBox__img3 {
   position: relative;
-  background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("/restaurants_images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 1rem 1rem 0rem 0rem;
@@ -229,7 +229,7 @@ button {
 }
 .restaurants__flexBox__img4 {
   position: relative;
-  background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("/restaurants_images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 1rem 1rem 0rem 0rem;
@@ -304,11 +304,15 @@ button {
     margin-bottom: -4%;
   }
 
+  .box {
+    flex-direction: column;
+  }
+
   .restaurants {
     padding: 3rem 1rem;
     flex-direction: column;
   }
-  .restaurants > div {
+  .restaurants__flexBox {
     width: 100%;
   }
   .restaurants__flexBox__img1 {
@@ -365,22 +369,22 @@ button {
 }
 
 .menuHeroImg__flexBox__img1 {
-  background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("/restaurants_images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
 .menuHeroImg__flexBox__img2 {
-  background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("/restaurants_images/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
 .menuHeroImg__flexBox__img3 {
-  background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("/restaurants_images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
 .menuHeroImg__flexBox__img4 {
-  background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("/restaurants_images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
