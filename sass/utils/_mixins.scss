@@ -46,22 +46,17 @@
     background:  linear-gradient(lighten($color-secondary, 5%), lighten($color-primary, 5%));
 }
 
-@mixin icon_animation_debut {
-    height: 1.6rem;
-    width: 1.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: end;
+@mixin icon_animation_debut {    
     border-radius: 100px;
     color: #99e2d0;
-    background-color: white;
-    font-size: 1.2rem;
-    transform: rotate(180deg);
-    transition-duration: .5s;
+    background: white;
+    transform: rotate(180deg);    
+    transition: transform .5s;
 }
 @mixin icon_animation_fin {
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 1.8rem;
+    width: 1.8rem;    
+    font-size: 1.2rem;
     transform: rotate(0deg);
-    transition-duration: .5s;
+    transition: transform .5s;
 }

@@ -184,16 +184,15 @@ button {
 .restaurants {
   padding: 3rem 2rem;
   background-color: #f6f6f6;
-  display: flex;
-  justify-content: space-between;
 }
 .restaurants__flexBox {
-  width: 100%;
+  width: 48%;
   margin-bottom: 10%;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   border-radius: 1rem 1rem 1rem 1rem;
 }
 .restaurants__flexBox__img1 {
+  position: relative;
   background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -205,6 +204,7 @@ button {
   width: 100%;
 }
 .restaurants__flexBox__img2 {
+  position: relative;
   background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -216,6 +216,7 @@ button {
   width: 100%;
 }
 .restaurants__flexBox__img3 {
+  position: relative;
   background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -227,6 +228,7 @@ button {
   width: 100%;
 }
 .restaurants__flexBox__img4 {
+  position: relative;
   background-image: url("/P3_ATINHOUNON_Nalvac/restaurants_images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -247,8 +249,14 @@ button {
 .restaurants__flexBox h3 {
   margin-bottom: 0.5%;
 }
-.restaurants > div {
-  width: 48%;
+.new {
+  position: absolute;
+  background-color: #99E2D0;
+  padding: 0.5rem;
+  color: #1b6150;
+  border-radius: 0.125rem;
+  right: 2rem;
+  top: 1.2rem;
 }
 
 .section-restaurant {
@@ -427,10 +435,11 @@ button {
   border-radius: 0 10px 10px 0;
 }
 .list-menu__flex > div:hover > .icon_confirmation .icon_confirmation__check {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  font-size: 1.2rem;
   transform: rotate(0deg);
-  transition-duration: 0.5s;
+  transition: transform 0.5s;
 }
 .list-menu__flex > div h4, .list-menu__flex > div p {
   white-space: nowrap;
@@ -464,17 +473,11 @@ button {
   transition: all 0.5s;
 }
 .icon_confirmation__check {
-  height: 1.6rem;
-  width: 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: end;
   border-radius: 100px;
   color: #99e2d0;
-  background-color: white;
-  font-size: 1.2rem;
+  background: white;
   transform: rotate(180deg);
-  transition-duration: 0.5s;
+  transition: transform 0.5s;
 }
 
 .price {
