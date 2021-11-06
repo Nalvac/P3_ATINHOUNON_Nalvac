@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 *,
 *::after,
@@ -64,20 +65,10 @@ a {
 }
 
 .fa-heart:before {
-  content: "\f004";
+  content: "";
   font-size: 1.5rem;
 }
 
-@keyframes progress-bar {
-  0% {
-    transform: translate(0%, -100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0%);
-    opacity: 1;
-  }
-}
 body {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -439,8 +430,8 @@ button {
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-  animation-name: progress-bar;
-  animation-duration: 1000ms;
+  -webkit-animation: 350ms ease-in-out;
+          animation: 350ms ease-in-out;
 }
 .list-menu__flex > div:hover > .icon_confirmation {
   height: 1.6rem;
@@ -503,7 +494,7 @@ button {
 }
 
 .fa-check-circle:before {
-  content: "\f058";
+  content: "";
   font-size: 1.8rem;
 }
 
@@ -572,6 +563,4 @@ ul > li > a {
 }
 ul > li > a:hover {
   text-decoration: underline;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
