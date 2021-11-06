@@ -29,6 +29,7 @@ a{
     display: flex;
     flex-direction: column;
 }
+
 .center{
     text-align: center;
 }
@@ -62,5 +63,17 @@ a{
     content: "\f004";
     font-size: 1.5rem;
 
+}
+@keyframes progress-bar {
+    0% {
+        opacity: 0;
+
+    }
+ 
+    100% {
+        opacity: 1;
+    }
+ 
+    
 }
 

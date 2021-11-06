@@ -68,6 +68,14 @@ a {
   font-size: 1.5rem;
 }
 
+@keyframes progress-bar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -429,7 +437,8 @@ button {
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-  animation: 350ms ease-in-out;
+  animation-name: progress-bar;
+  animation-duration: 1000ms;
 }
 .list-menu__flex > div:hover > .icon_confirmation {
   height: 1.6rem;

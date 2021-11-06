@@ -60,8 +60,9 @@
             border-radius: 10px;
             background-color: white;            
              @include borderShadow;
-             
-        animation: 350ms ease-in-out;
+            animation-name: progress-bar;
+            animation-duration: 1000ms;
+            
             
             &:hover >.icon_confirmation {
                 height: 1.6rem;   
