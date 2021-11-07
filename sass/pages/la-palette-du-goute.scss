@@ -61,7 +61,7 @@
              @include borderShadow;
             animation-name: progress-bar;
             animation-duration: 1.5s;
-            animation-timing-function: ease-in-out;
+            animation-timing-function:cubic-bezier(.35,.58,.28,.9);
             animation-fill-mode: both;
             
             &:hover >.icon_confirmation {

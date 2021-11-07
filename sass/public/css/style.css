@@ -464,7 +464,7 @@ button {
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   animation-name: progress-bar;
   animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: cubic-bezier(0.35, 0.58, 0.28, 0.9);
   animation-fill-mode: both;
 }
 .list-menu__flex > div:hover > .icon_confirmation {
