@@ -67,9 +67,11 @@ a{
 @keyframes progress-bar {
     0% {
         transform: translate(0%,70%);
-        opacity: .09;
+        opacity: 0;
     }
- 
+    30%{
+        opacity: 0;
+    }
     
 
     100% {
