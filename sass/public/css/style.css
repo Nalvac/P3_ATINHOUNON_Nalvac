@@ -70,7 +70,10 @@ a {
 
 @keyframes progress-bar {
   0% {
-    transform: translate(0%, -100%);
+    transform: translate(0%, -50%);
+    opacity: 0;
+  }
+  30% {
     opacity: 0;
   }
   100% {
@@ -441,6 +444,7 @@ button {
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   animation-name: progress-bar;
   animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
 }
 .list-menu__flex > div:hover > .icon_confirmation {
   height: 1.6rem;
