@@ -81,6 +81,26 @@ a {
     opacity: 1;
   }
 }
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+.delay-3 {
+  animation-delay: 1.5s;
+}
+
+.delay-4 {
+  animation-delay: 2s;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -443,8 +463,9 @@ button {
   background-color: white;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   animation-name: progress-bar;
-  animation-duration: 1000ms;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 .list-menu__flex > div:hover > .icon_confirmation {
   height: 1.6rem;

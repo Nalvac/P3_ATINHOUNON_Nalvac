@@ -1,5 +1,4 @@
 
-
 .heroImg{
     min-height: 30rem;
     max-height: 32rem; 
@@ -61,9 +60,9 @@
             background-color: white;            
              @include borderShadow;
             animation-name: progress-bar;
-            animation-duration: 1000ms;
+            animation-duration: 1s;
             animation-timing-function: ease-in-out;
-            
+            animation-fill-mode: both;
             
             &:hover >.icon_confirmation {
                 height: 1.6rem;   

@@ -80,4 +80,10 @@ a{
     }
     
 }
+@for $i from 0 through 4 {
+    $delay : 0;
+    .delay-#{$i} {
+        animation-delay : $delay + $i/2 *1s ;
+    }
+}
 
