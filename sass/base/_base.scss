@@ -81,7 +81,7 @@ a{
     
 }
 @for $i from 0 through 3{
-    $delay : 0.10s;
+    $delay : 0s;
     .delay-#{$i} {
         animation-delay : $delay + $i/5 *1s ;
     }
