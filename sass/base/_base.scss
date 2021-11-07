@@ -66,12 +66,10 @@ a{
 }
 @keyframes progress-bar {
     0% {
-        transform: translate(0%,60%);
-        opacity: 0;
+        transform: translate(0%,55%);
+        opacity: .09;
     }
-    30%{
-        opacity: 0;
-    }
+ 
     
 
     100% {
@@ -80,10 +78,10 @@ a{
     }
     
 }
-@for $i from 0 through 4 {
+@for $i from 0 through 3{
     $delay : 0;
     .delay-#{$i} {
-        animation-delay : $delay + $i/2 *1s ;
+        animation-delay : $delay + $i/5 *1s ;
     }
 }
 
