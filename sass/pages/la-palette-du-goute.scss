@@ -62,7 +62,7 @@
             animation-name: progress-bar;
             animation-duration: 1s;
             
-            animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in;
             animation-fill-mode: both;
             
             &:hover >.icon_confirmation {
