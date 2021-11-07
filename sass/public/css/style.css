@@ -79,19 +79,19 @@ a {
   }
 }
 .delay-0 {
-  animation-delay: 0s;
+  animation-delay: 0.1s;
 }
 
 .delay-1 {
-  animation-delay: 0.2s;
+  animation-delay: 0.3s;
 }
 
 .delay-2 {
-  animation-delay: 0.4s;
+  animation-delay: 0.5s;
 }
 
 .delay-3 {
-  animation-delay: 0.6s;
+  animation-delay: 0.7s;
 }
 
 body {
@@ -456,7 +456,7 @@ button {
   background-color: white;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   animation-name: progress-bar;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
