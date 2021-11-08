@@ -82,19 +82,145 @@ a {
   }
 }
 .delay-0 {
-  animation-delay: 0s;
+  animation-delay: 0.3s;
 }
 
 .delay-1 {
-  animation-delay: 0.2s;
+  animation-delay: 0.5s;
 }
 
 .delay-2 {
-  animation-delay: 0.4s;
+  animation-delay: 0.7s;
 }
 
 .delay-3 {
-  animation-delay: 0.6s;
+  animation-delay: 0.9s;
+}
+
+.lds-roller {
+  display: inline;
+  position: fixed;
+  top: 50%;
+  left: 45%;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-roller div {
+  animation: lds-roller 3s cubic-bezier(0.5, 0, 0.5, 1);
+  animation-fill-mode: both;
+  transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fcf;
+  margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes fondu {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main {
+  animation-name: fondu;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+.main .lds-roller div {
+  opacity: 0;
 }
 
 body {
@@ -111,6 +237,7 @@ h1 {
 span {
   font-size: 1.2rem;
   position: relative;
+  font-weight: 300;
 }
 
 .text-decoration ::after {
@@ -127,7 +254,7 @@ span {
   span {
     font-size: 1rem;
     text-align: center;
-    font-weight: 500;
+    font-weight: 300;
   }
 }
 header {
@@ -142,6 +269,13 @@ header {
 button {
   background-color: #FF79DA;
   color: #fff;
+}
+
+.animation {
+  animation-name: roller;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
 }
 
 .local {
@@ -228,6 +362,7 @@ button {
   border-radius: 1rem 1rem 0rem 0rem;
   overflow: hidden;
   position: relative;
+  object-fit: cover;
   display: block;
   height: 12rem;
   width: 100%;
@@ -240,6 +375,7 @@ button {
   border-radius: 1rem 1rem 0rem 0rem;
   overflow: hidden;
   position: relative;
+  object-fit: cover;
   display: block;
   height: 12rem;
   width: 100%;
@@ -252,6 +388,7 @@ button {
   border-radius: 1rem 1rem 0rem 0rem;
   overflow: hidden;
   position: relative;
+  object-fit: cover;
   display: block;
   height: 12rem;
   width: 100%;
@@ -264,6 +401,7 @@ button {
   border-radius: 1rem 1rem 0rem 0rem;
   overflow: hidden;
   position: relative;
+  object-fit: cover;
   display: block;
   height: 12rem;
   width: 100%;
@@ -324,6 +462,10 @@ button {
   }
 }
 @media (min-width: 0px) and (max-width: 788px) {
+  .lds-roller {
+    left: 40%;
+  }
+
   .fonctionnement li {
     width: 100%;
     margin-bottom: 8%;
@@ -345,16 +487,16 @@ button {
     width: 100%;
   }
   .restaurants__flexBox__img1 {
-    height: 8.5rem;
+    height: 12.5rem;
   }
   .restaurants__flexBox__img2 {
-    height: 8.5rem;
+    height: 12.5rem;
   }
   .restaurants__flexBox__img3 {
-    height: 8.5rem;
+    height: 12.5rem;
   }
   .restaurants__flexBox__img4 {
-    height: 8.5rem;
+    height: 12.5rem;
   }
 
   .section-restaurant > h2 {

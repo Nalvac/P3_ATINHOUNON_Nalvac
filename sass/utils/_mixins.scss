@@ -12,13 +12,14 @@
 @mixin img-ratio {
     overflow: hidden;
     position: relative;
+    object-fit: cover;
     display: block;
     height: 12rem;
     width: 100%;   
 }
 @mixin img-ratio__mobile {
    
-    height: 8.5rem;
+    height: 12.5rem;
     
 }
 @mixin btn {

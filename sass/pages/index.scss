@@ -1,4 +1,10 @@
-
+.animation{
+    animation-name: roller;
+    animation-duration: 1s;
+    
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
 .local{
     width: 100%;
     background-color: #dddddd;
@@ -150,7 +156,10 @@
     }
 }
 @media (min-width: 0px) and (max-width: 788px) { 
-    
+    .lds-roller {
+
+        left: 40%;  
+    }
     .fonctionnement{
         li{
            
