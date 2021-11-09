@@ -360,6 +360,10 @@ button {
   z-index: -1;
   transition: opacity 250ms;
 }
+.fonctionnement li .fa-store:before {
+  content: "\f54e";
+  COLOR: #a16be0;
+}
 .fonctionnement li::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
@@ -373,10 +377,6 @@ button {
   border-radius: 100px;
   color: white;
   background-color: #9356DC;
-}
-.fonctionnement li .fa-store:before {
-  content: "\f54e";
-  COLOR: #a16be0;
 }
 
 .restaurants {

@@ -57,20 +57,25 @@
         & span{
             font-weight: bold;
         }
-       
-        &:nth-child(3)::after{ 
-            content: "";
-            position: absolute;
-            top : 0;
-            left :0;
-            bottom: 0;
-            right: 0;
-            background-color: lighten($color-primary, 33);            
-            border-radius: 20px;
-            opacity: .9;
-            z-index: -1;
-            transition: opacity 250ms;
+        
+         &:nth-child(3)::after{ 
+                content: "";
+                position: absolute;
+                top : 0;
+                left :0;
+                bottom: 0;
+                right: 0;
+                background-color: lighten($color-primary, 33);            
+                border-radius: 20px;
+                opacity: .9;
+                z-index: -1;
+                transition: opacity 250ms;
         }
+        .fa-store:before {
+                content: "\f54e";
+                COLOR: #a16be0;
+         }
+        
         &::before{
             counter-increment: compteListe 1;
             content: counter(compteListe) " " ;
@@ -85,10 +90,7 @@
             color : white;
             background-color: $color-primary;
         }
-        .fa-store:before {
-            content: "\f54e";
-            COLOR: #a16be0;
-        }
+   
       
 
     }
