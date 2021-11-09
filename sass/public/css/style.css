@@ -329,10 +329,25 @@ button {
   padding: 1.5rem;
   border-radius: 20px;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  cursor: pointer;
   position: relative;
+  z-index: 1;
 }
 .fonctionnement li span {
   font-weight: bold;
+}
+.fonctionnement li:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #ece1f9;
+  border-radius: 20px;
+  opacity: 0.9;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 .fonctionnement li::before {
   counter-increment: compteListe 1;
@@ -347,6 +362,10 @@ button {
   border-radius: 100px;
   color: white;
   background-color: #9356DC;
+}
+.fonctionnement li .fa-store:before {
+  content: "\f54e";
+  COLOR: #a16be0;
 }
 
 .restaurants {
