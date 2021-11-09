@@ -343,25 +343,15 @@ button {
   cursor: pointer;
   position: relative;
   z-index: 1;
+  transition: all 1s;
 }
 .fonctionnement li span {
   font-weight: bold;
 }
-.fonctionnement li:nth-child(3)::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.fonctionnement li:hover {
   background-color: #ece1f9;
-  border-radius: 20px;
-  opacity: 0.9;
-  z-index: -1;
-  transition: opacity 250ms;
 }
-.fonctionnement li .fa-store:before {
-  content: "\f54e";
+.fonctionnement li:hover > i {
   COLOR: #a16be0;
 }
 .fonctionnement li::before {
