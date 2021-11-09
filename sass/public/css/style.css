@@ -21,9 +21,14 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  width: 100%;
 }
 .flex_row__espaceBetween, .box {
   justify-content: space-between;
+}
+
+.icone_map {
+  padding: 0% 1%;
 }
 
 .flex_column, .restaurants__flexBox {
@@ -95,6 +100,12 @@ a {
 
 .delay-3 {
   animation-delay: 0.9s;
+}
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .lds-roller {

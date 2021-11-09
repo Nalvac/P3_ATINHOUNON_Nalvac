@@ -23,9 +23,13 @@ a{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    width: 100%;
     &__espaceBetween{
         justify-content: space-between;
     }
+}
+.icone_map{
+    padding: 0% 1%;
 }
 .flex_column{
     display: flex;
@@ -87,6 +91,11 @@ a{
     .delay-#{$i} {
         animation-delay : $delay + $i/5 *1s ;
     }
+}
+.hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 .lds-roller {
