@@ -331,6 +331,9 @@ button {
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   position: relative;
 }
+.fonctionnement li span {
+  font-weight: bold;
+}
 .fonctionnement li::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
@@ -342,6 +345,7 @@ button {
   height: 1.5rem;
   align-items: center;
   border-radius: 100px;
+  color: white;
   background-color: #9356DC;
 }
 
@@ -529,7 +533,7 @@ button {
     display: flex;
   }
   .fonctionnement li > span {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: unset;
   }
 }

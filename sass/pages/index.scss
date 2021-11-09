@@ -52,6 +52,9 @@
         border-radius: 20px;
         @include borderShadow;
         position: relative;
+        & span{
+            font-weight: bold;
+        }
         &::before{
             counter-increment: compteListe 1;
             content: counter(compteListe) " " ;
@@ -63,6 +66,7 @@
             height: 1.5rem;
             align-items: center;
             border-radius: 100px;
+            color : white;
             background-color: $color-primary;
         }
 
@@ -215,7 +219,7 @@
         li{ 
             display: flex;           
             > span{
-                font-size: 0.8rem;
+                font-size: 1rem;
                 text-align:unset;
                 
             }
