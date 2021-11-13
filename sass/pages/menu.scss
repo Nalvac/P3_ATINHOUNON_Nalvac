@@ -116,8 +116,9 @@
     width: 0rem;
     display: flex;
     overflow: hidden;
-    align-items: center;    
-    transition: all 0.5s;
+    align-items: center;  
+    justify-content: center;  
+    transition: all 0.8s;
     &__check {
         @include icon_animation_debut;        
     }
